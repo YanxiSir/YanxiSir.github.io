@@ -335,7 +335,10 @@
       
         
           
-            <h2 id="基础篇"><a href="#基础篇" class="headerlink" title="基础篇"></a>基础篇</h2><h3 id="基本功"><a href="#基本功" class="headerlink" title="基本功"></a>基本功</h3><h4 id="面向对象的特征"><a href="#面向对象的特征" class="headerlink" title="面向对象的特征"></a>面向对象的特征</h4><p><a href="https://blog.csdn.net/qq_15150353/article/details/52649349" target="_blank" rel="noopener">传送门</a></p>
+            <blockquote>
+<p><strong>有人整理过答案</strong>，见 <a href="https://blog.csdn.net/u010697681/article/details/79414112" target="_blank" rel="noopener">链接 </a></p>
+</blockquote>
+<h2 id="基础篇"><a href="#基础篇" class="headerlink" title="基础篇"></a>基础篇</h2><h3 id="基本功"><a href="#基本功" class="headerlink" title="基本功"></a>基本功</h3><h4 id="面向对象的特征"><a href="#面向对象的特征" class="headerlink" title="面向对象的特征"></a>面向对象的特征</h4><p><a href="https://blog.csdn.net/qq_15150353/article/details/52649349" target="_blank" rel="noopener">传送门</a></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">三大特征：封装、继承、多态</span><br><span class="line">五大原则：单一职责原则、替换原则、开放封闭原则(更改性封闭，扩展性开放)、依赖倒置原则(依赖抽象不能依赖具体，对抽象编程不能对实现进行编程)、接口隔离原则</span><br></pre></td></tr></table></figure>
 <h4 id="final-finally-finalize-的区别"><a href="#final-finally-finalize-的区别" class="headerlink" title="final, finally, finalize 的区别"></a>final, finally, finalize 的区别</h4><p><a href="http://www.iteye.com/topic/484934" target="_blank" rel="noopener">深入理解finalize</a></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Final：用于修饰类、成员变量和成员方法。final修饰的类不能被继承(String、StringBuilder、StringBuffer、Math、不可变类)，其中所有的方法都不能被重写，所以不能同时用abstract和final修饰类。final修饰的方法不能被重写，但是子类可以用父类中final修饰的方法。final修饰的成员变量是不可变的，基本数据类型值不可变，引用类型，指向的对象不遍，对象内容可变。</span><br><span class="line">Finally：通常和try catch搭配使用，保证不管有没有异常发生，资源都能够被释放(释放连接、关闭IO流)。</span><br><span class="line">Finalize：是Object类中的一个方法，子类可以重写finalize()方法实现对资源的回收。辣鸡回收只负责回收内存，并不负责资源的回收，资源回收要由程序员完成，JVM在垃圾回收之前会先调用垃圾对象的finalize方式用于使对象释放资源(如关闭连接、关闭文件)，之后才进行垃圾回收，这个方法一般不会显示的调用，在垃圾回收时垃圾回收器会主动调用。</span><br></pre></td></tr></table></figure>
